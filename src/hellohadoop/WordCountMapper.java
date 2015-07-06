@@ -13,7 +13,7 @@ public class WordCountMapper extends Mapper<LongWritable, Text, Text, IntWritabl
 
     Text outKey = new Text("");
     IntWritable outValue = new IntWritable(1);
-    Regexp rg = new Regexp()
+
     @Override
     public void map(LongWritable key, Text value, Context context)
             throws IOException, InterruptedException {
